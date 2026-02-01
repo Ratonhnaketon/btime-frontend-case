@@ -19,5 +19,6 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 1. npm install
 2. npm run storybook
 3. Abrir [http://localhost:6006](http://localhost:6006) 
+4. Rodar testes
 ```
 
