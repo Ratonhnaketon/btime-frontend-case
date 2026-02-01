@@ -1,0 +1,43 @@
+import { styled } from "storybook/theming";
+
+export const Button = styled.button`
+  display: inline-block;
+  cursor: pointer;
+  border: 0;
+  border-radius: 3em;
+  font-weight: 700;
+  line-height: 1;
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;  
+
+  &.primary {
+    background-color: #555ab9;
+    color: white; 
+  }
+
+  &.secondary {
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
+    background-color: white;
+    color: #333;
+  }
+
+  &.extra-small {
+    padding: 8px 12px;
+    font-size: 8px;
+  }
+
+
+  &.small {
+    padding: 10px 16px;
+    font-size: 12px;
+  }
+
+  &.medium {
+    padding: 11px 20px;
+    font-size: 14px;
+  }
+
+  &.large {
+    padding: 12px 24px;
+    font-size: 16px;
+  }
+`
