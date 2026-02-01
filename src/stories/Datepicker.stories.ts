@@ -29,3 +29,17 @@ export const Primary: Story = {
     onChange: (input) => alert(input.toISOString())
   },
 };
+
+export const Secondary: Story = {
+  args: {
+    label: 'Datepicker',
+  },
+};
+
+export const Tertiary: Story = {
+  args: {
+    label: 'Datepicker',
+    value: new Date(),
+    onChange: (input) => alert(input.toISOString())
+  },
+};
