@@ -17,11 +17,11 @@ type Props = {
   /** CSS's `align-items` */
   align?: 'start' | 'end' | 'center' | 'space-around' | 'space-between';
   /** `background-color` */
-  backgroundColor?: string;
+  backgroundcolor?: string;
   /** `border-color` */
-  borderColor?: string;
+  bordercolor?: string;
   /** `border-width` */
-  borderWidth?: ComponentBorder;
+  borderwidth?: ComponentBorder;
   /** React Children */
   children: React.ReactNode;
   /** CSS's `flex-direction` */
@@ -77,11 +77,11 @@ type Props = {
 const StyledFlex = styled.div<Props>(({ theme, ...props }) => {
   return {
     alignItems: props.align,
-    backgroundcolor: props.backgroundColor,
-    borderColor: props.borderColor,
+    backgroundColor: props.backgroundcolor,
+    borderColor: props.bordercolor,
     borderRadius: props.radius ? border.radius[props.radius] : undefined,
-    borderStyle: props.borderWidth ? 'solid' : 'none',
-    borderWidth: makeBorder(props.borderWidth),
+    borderStyle: props.borderwidth ? 'solid' : 'none',
+    borderWidth: makeBorder(props.borderwidth),
     cursor: props.onClick ? 'pointer' : 'inherit',
     display: 'flex',
     flex: props.flex,

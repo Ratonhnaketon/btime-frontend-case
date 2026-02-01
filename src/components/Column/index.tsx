@@ -16,8 +16,8 @@ export function Column(props: Props) {
       height="100%"
       flex={1}
       gap="xs3"
-      borderColor="grey"
-      borderWidth='xs2'
+      bordercolor="grey"
+      borderwidth='xs2'
       align="center"
       padding={['xs5', 'xs4']}
     >

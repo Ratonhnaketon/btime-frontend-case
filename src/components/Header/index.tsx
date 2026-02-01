@@ -10,7 +10,13 @@ type Props = {
 export function Header(props: Props) {
   return (
     <header>
-      <Flex justify='end' padding={['xs5', 's']} align='center' gap='xs4' backgroundColor='#FFFBDE'>
+      <Flex
+        justify='end'
+        padding={['xs5', 's']}
+        align='center'
+        gap='xs4'
+        backgroundcolor='#FFFBDE'
+      >
         {props.children}
       </Flex>
     </header>

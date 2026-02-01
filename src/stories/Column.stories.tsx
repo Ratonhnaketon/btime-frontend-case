@@ -28,8 +28,8 @@ export const Default: Story = {
   args: {
     title: 'Título',
     children: [
-      <Card title={'Tarefa 1'} description='Descrição' date={new Date} tag={{ text: 'Texto', variant: 'error' }} />,
-      <Card title={'Tarefa 2'} description='Descrição' date={new Date} tag={{ text: 'Texto', variant: 'warning' }} />
+      <Card title={'Tarefa 1'} date={new Date} tag={{ text: 'Texto', variant: 'error' }} />,
+      <Card title={'Tarefa 2'} date={new Date} tag={{ text: 'Texto', variant: 'warning' }} />
     ]
   },
 };

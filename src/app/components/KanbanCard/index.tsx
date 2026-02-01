@@ -3,10 +3,11 @@ import ModalService from "@/services/ModalService";
 import KanbanCardModal from "./KanbanCardModal";
 
 type Props = Omit<React.ComponentProps<typeof Card>, 'tag' | 'onClick'> & {
-  priority: 'low' | 'high' | 'critical'
+  priority: 'low' | 'high' | 'critical';
+  description: string;
 }
 
-export function KanbanCard({ priority, ...props }: Props) {
+export function KanbanCard({ priority, description, ...props }: Props) {
   const tagProps = tagMapper(priority)
 
   return (
@@ -16,7 +17,7 @@ export function KanbanCard({ priority, ...props }: Props) {
       onClick={() => {
         ModalService.show(KanbanCardModal, {
           title: props.title,
-          description: props.description,
+          description,
           date: props.date,
           tag: tagProps,
         })

@@ -5,7 +5,6 @@ import { Typography } from "../Typography";
 
 type Props = {
   title: string;
-  description: string;
   date: Date;
   tag: {
     variant: 'success' | 'warning' | 'error',
@@ -15,18 +14,18 @@ type Props = {
 }
 
 /**
- * Kanban Card component
+ * Card component
  */
 export function Card(props: Props) {
   return (
     <Flex
       direction="column"
       width="310px"
-      height="200px"
+      height="130px"
       onClick={props.onClick}
       gap="xs3"
-      borderColor="grey"
-      borderWidth='xs2'
+      bordercolor="grey"
+      borderwidth='xs2'
       radius="m"
       align="center"
       justify="space-between"
@@ -37,9 +36,6 @@ export function Card(props: Props) {
           {props.title}
         </Typography.Headline8>
       </Flex>
-      <Typography.Body4 color="black">
-        {props.description}
-      </Typography.Body4>
       <Flex direction="row" gap="xs4" align="center">
         <Typography.Caption color="grey">
           {formatDate(props.date)}

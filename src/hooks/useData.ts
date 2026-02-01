@@ -5,15 +5,15 @@ import React from "react";
 
 const DATA = {
   todo: [
-    { title: 'Tarefa 1', description: 'Descrição', date: new Date(), priority: 'low' },
-    { title: 'Tarefa 1', description: 'Descrição', date: new Date(), priority: 'critical' },
+    { id: '1', title: 'Tarefa 1', description: 'Descrição', date: new Date(), priority: 'low' },
+    { id: '2', title: 'Tarefa 1', description: 'Descrição', date: new Date(), priority: 'critical' },
   ],
   doing: [
-    { title: 'Tarefa 2', description: 'Descrição', date: new Date(), priority: 'high' },
-    { title: 'Tarefa 5', description: 'Descrição', date: new Date(), priority: 'critical' },
-    { title: 'Tarefa 6', description: 'Descrição', date: new Date(), priority: 'high' }
+    { id: '3', title: 'Tarefa 2', description: 'Descrição', date: new Date(), priority: 'high' },
+    { id: '4', title: 'Tarefa 5', description: 'Descrição', date: new Date(), priority: 'critical' },
+    { id: '5', title: 'Tarefa 6', description: 'Descrição', date: new Date(), priority: 'high' }
   ],
-  done: [{ title: 'Tarefa 3', description: 'Descrição', date: new Date(), priority: 'low' }],
+  done: [{ id: '6', title: 'Tarefa 3', description: 'Descrição', date: new Date(), priority: 'low' }],
 } as const;
 
 
@@ -54,7 +54,6 @@ export function useData() {
     ),
   }
   
-
   return {
     priority,
     setPriority,

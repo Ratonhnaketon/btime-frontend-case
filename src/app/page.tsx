@@ -2,7 +2,6 @@
 
 import styles from "./page.module.css";
 import { Column } from "@/components/Column";
-import { Card } from "@/components/Card";
 import Flex from "@/components/Flex";
 import { Header } from "@/components/Header";
 import { TextField } from "@/components/TextField";
@@ -44,17 +43,17 @@ function Board() {
         <Flex height="100%" direction="row">
           <Column title="TODO">
             {data.tasks.todo.map((task) => 
-              <KanbanCard {...task} key={`${task.date}-${task.description}`} />)
+              <KanbanCard {...task} key={task.id} />)
             }
           </Column>
           <Column title="DOING">
             {data.tasks.doing.map((task) => 
-              <KanbanCard {...task} key={`${task.date}-${task.description}`} />)
+              <KanbanCard {...task} key={task.id} />)
             }
           </Column>
           <Column title="DONE">
             {data.tasks.done.map((task) => 
-              <KanbanCard {...task} key={`${task.date}-${task.description}`} />)
+              <KanbanCard {...task} key={task.id} />)
             }
           </Column>
         </Flex>

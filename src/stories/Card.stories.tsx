@@ -26,7 +26,6 @@ type Story = StoryObj<typeof meta>;
 export const Default: Story = {
   args: {
     title: 'Título',
-    description: 'Descrição',
     date: new Date(),
     tag: {
       variant: 'error',
